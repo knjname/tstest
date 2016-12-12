@@ -1,5 +1,5 @@
 const path = require("path");
-gconst webpack = require("webpack");
+const webpack = require("webpack");
 
 module.exports = {
     entry: {
