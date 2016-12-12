@@ -4,6 +4,9 @@ services:
   npm-cache:
     image: langrisha/npm-lazy
     ports:
-      - 18888:8080
+      - 18888:18888
+    environment:
+      - NPM_LAZY_PORT=18888
+      - NPM_LAZY_EXTERNAL_URL=http://localhost:18888 # Don't forget to specify!!!
     volumes:
       - ./.npm_lazy:/root/.npm_lazy

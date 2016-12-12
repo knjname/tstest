@@ -28,6 +28,12 @@ Or if you would like to launch it up with `webpack-dev-server` instead;
 $ yarn run webpack-dev-server -- --content-base public --port 8080 --hot --inline
 ```
 
+
+## External Resources
+
+
+
+
 ## License
 
 MIT License.
