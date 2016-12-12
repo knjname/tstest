@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@types/react-dom@^0.14.19":
+  version "0.14.19"
+  resolved "http://localhost:8080/@types/react-dom/-/react-dom-0.14.19.tgz#698a14335e32fb1bc61db65f5647c9668a7fc2eb"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^0.14.55":
+  version "0.14.55"
+  resolved "http://localhost:8080/@types/react/-/react-0.14.55.tgz#f7f7a6ad0c94780531e95632435b2798c5dad11b"
+
 abbrev@1:
   version "1.0.9"
   resolved "http://localhost:8080/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
@@ -118,6 +128,17 @@ async@~0.2.6:
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "http://localhost:8080/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
+
+awesome-typescript-loader@^3.0.0-beta.12:
+  version "3.0.0-beta.12"
+  resolved "http://localhost:8080/awesome-typescript-loader/-/awesome-typescript-loader-3.0.0-beta.12.tgz#5569f9ccb6c8108ddb61f2465bad10a98669e61e"
+  dependencies:
+    colors "^1.1.2"
+    enhanced-resolve "^2.3.0"
+    loader-utils "^0.2.16"
+    lodash "^4.13.1"
+    object-assign "^4.1.0"
+    source-map-support "^0.4.0"
 
 aws-sign2@~0.6.0:
   version "0.6.0"
@@ -268,7 +289,7 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "http://localhost:8080/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-colors@^1.0.3:
+colors@^1.1.2:
   version "1.1.2"
   resolved "http://localhost:8080/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
 
@@ -430,14 +451,14 @@ encoding@^0.1.11:
   dependencies:
     iconv-lite "~0.4.13"
 
-enhanced-resolve@^3.0.0:
-  version "3.0.0"
-  resolved "http://localhost:8080/enhanced-resolve/-/enhanced-resolve-3.0.0.tgz#cf30a6600bc236a4fcef627bb8e5adf072511a8e"
+enhanced-resolve@^2.3.0:
+  version "2.3.0"
+  resolved "http://localhost:8080/enhanced-resolve/-/enhanced-resolve-2.3.0.tgz#a115c32504b6302e85a76269d7a57ccdd962e359"
   dependencies:
     graceful-fs "^4.1.2"
-    memory-fs "^0.4.0"
+    memory-fs "^0.3.0"
     object-assign "^4.0.1"
-    tapable "^0.2.5"
+    tapable "^0.2.3"
 
 enhanced-resolve@~0.9.0:
   version "0.9.1"
@@ -982,7 +1003,7 @@ lazy-cache@^1.0.3:
   version "1.0.4"
   resolved "http://localhost:8080/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
 
-loader-utils@^0.2.11, loader-utils@^0.2.6:
+loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@~0.2.2:
   version "0.2.16"
   resolved "http://localhost:8080/loader-utils/-/loader-utils-0.2.16.tgz#f08632066ed8282835dff88dfb52704765adee6d"
   dependencies:
@@ -991,7 +1012,7 @@ loader-utils@^0.2.11, loader-utils@^0.2.6:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-lodash@^4.17.2, lodash@^4.2.0:
+lodash@^4.13.1, lodash@^4.17.2, lodash@^4.2.0:
   version "4.17.2"
   resolved "http://localhost:8080/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
@@ -1013,14 +1034,7 @@ memory-fs@^0.2.0:
   version "0.2.0"
   resolved "http://localhost:8080/memory-fs/-/memory-fs-0.2.0.tgz#f2bb25368bc121e391c2520de92969caee0a0290"
 
-memory-fs@^0.4.0:
-  version "0.4.1"
-  resolved "http://localhost:8080/memory-fs/-/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"
-  dependencies:
-    errno "^0.1.3"
-    readable-stream "^2.0.1"
-
-memory-fs@~0.3.0:
+memory-fs@^0.3.0, memory-fs@~0.3.0:
   version "0.3.0"
   resolved "http://localhost:8080/memory-fs/-/memory-fs-0.3.0.tgz#7bcc6b629e3a43e871d7e29aca6ae8a7f15cbb20"
   dependencies:
@@ -1461,7 +1475,7 @@ ripemd160@0.2.0:
   version "0.2.0"
   resolved "http://localhost:8080/ripemd160/-/ripemd160-0.2.0.tgz#2bf198bde167cacfa51c0a928e84b68bbe171fce"
 
-semver@^5.0.1, semver@~5.3.0:
+semver@~5.3.0:
   version "5.3.0"
   resolved "http://localhost:8080/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
@@ -1556,15 +1570,35 @@ source-list-map@~0.1.7:
   version "0.1.7"
   resolved "http://localhost:8080/source-list-map/-/source-list-map-0.1.7.tgz#d4b5ce2a46535c72c7e8527c71a77d250618172e"
 
+source-map-loader@^0.1.5:
+  version "0.1.5"
+  resolved "http://localhost:8080/source-map-loader/-/source-map-loader-0.1.5.tgz#0ec6ca58aa0e61463a28673dd4c49e8ba67dc718"
+  dependencies:
+    async "^0.9.0"
+    loader-utils "~0.2.2"
+    source-map "~0.1.33"
+
+source-map-support@^0.4.0:
+  version "0.4.6"
+  resolved "http://localhost:8080/source-map-support/-/source-map-support-0.4.6.tgz#32552aa64b458392a85eab3b0b5ee61527167aeb"
+  dependencies:
+    source-map "^0.5.3"
+
+source-map@^0.5.3, source-map@~0.5.1:
+  version "0.5.6"
+  resolved "http://localhost:8080/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
+
+source-map@~0.1.33:
+  version "0.1.43"
+  resolved "http://localhost:8080/source-map/-/source-map-0.1.43.tgz#c24bc146ca517c1471f5dacbe2571b2b7f9e3346"
+  dependencies:
+    amdefine ">=0.0.4"
+
 source-map@~0.4.1:
   version "0.4.4"
   resolved "http://localhost:8080/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
   dependencies:
     amdefine ">=0.0.4"
-
-source-map@~0.5.1:
-  version "0.5.6"
-  resolved "http://localhost:8080/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
 sshpk@^1.7.0:
   version "1.10.1"
@@ -1650,7 +1684,7 @@ tapable@^0.1.8, tapable@~0.1.8:
   version "0.1.10"
   resolved "http://localhost:8080/tapable/-/tapable-0.1.10.tgz#29c35707c2b70e50d07482b5d202e8ed446dafd4"
 
-tapable@^0.2.5:
+tapable@^0.2.3:
   version "0.2.5"
   resolved "http://localhost:8080/tapable/-/tapable-0.2.5.tgz#1ff6ce7ade58e734ca9bfe36ba342304b377a4d0"
 
@@ -1690,16 +1724,6 @@ tough-cookie@~2.3.0:
   resolved "http://localhost:8080/tough-cookie/-/tough-cookie-2.3.2.tgz#f081f76e4c85720e6c37a5faced737150d84072a"
   dependencies:
     punycode "^1.4.1"
-
-ts-loader@^1.3.2:
-  version "1.3.2"
-  resolved "http://localhost:8080/ts-loader/-/ts-loader-1.3.2.tgz#55b21ebb3fc41b854861df9ccab5ff52817e79a9"
-  dependencies:
-    colors "^1.0.3"
-    enhanced-resolve "^3.0.0"
-    loader-utils "^0.2.6"
-    object-assign "^4.1.0"
-    semver "^5.0.1"
 
 tty-browserify@0.0.0:
   version "0.0.0"

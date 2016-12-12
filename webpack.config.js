@@ -9,12 +9,18 @@ module.exports = {
         path: path.resolve(__dirname, "public"),
         filename: "[name].js",
     },
+    resolve: {
+        extensions: ["", ".webpack.js", ".tsx", ".ts", ".js"],
+    },
     module: {
         loaders: [
             {
                 test: /\.tsx?$/,
-                loader: "ts-loader",
-            }
-        ]
-    }
+                loader: "awesome-typescript-loader",
+            },
+        ],
+        preLoaders: [
+            { test: /\.js$/, loader: "source-map-loader", },
+        ],
+    },
 };

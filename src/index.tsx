@@ -1,19 +1,21 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-var MyComponent = React.createClass({
-  render: function() {
+interface MyComponentProp {
+    name: string
+}
+
+class MyComponent extends React.Component<MyComponentProp, {}>{
+  render() {
     return (
       <div>
-          <h1>React rendered!</h1>
+          <h1>{ this.props.name } rendered!</h1>
       </div>
     );
   }
-});
+}
 
 ReactDOM.render(
-  <MyComponent />,
+  <MyComponent name="knjname" />,
   document.getElementById("app")
 );
-
-

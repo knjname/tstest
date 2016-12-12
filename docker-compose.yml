@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  npm-cache:
+    image: langrisha/npm-lazy
+    ports:
+      - 18888:8080
+    volumes:
+      - ./.npm_lazy:/root/.npm_lazy
